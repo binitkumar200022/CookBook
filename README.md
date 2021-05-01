@@ -1,5 +1,5 @@
 # CookBook
-Note:- WORK IN PROGRESS.
+A Recipe Book App, where you can search for others recipes and share your own.
 ## Screenshots
 Note:- WORK IN PROGRESS.
 <br/>
