@@ -1,11 +1,11 @@
 # CookBook
-This is an android application developed for a college which would cater to the students and teachers in different ways like the conversations which are happening via different instant messaging apps will now be routed via our own app, our hostel food token buying can be made online, etc.<br/>
-I plan to add more features in future. Some features in pipeline – Homepage makeover, Food Token buying option.</br>
-Note:- This is not an official project.
+Note:- WORK IN PROGRESS.
 ## Screenshots
+Note:- WORK IN PROGRESS.
 <br/>
 <br/>
 ## Working
+Note:- WORK IN PROGRESS.
 <br/>
 <br/>
 ## Download APK
