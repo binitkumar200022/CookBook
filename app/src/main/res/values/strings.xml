@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CookBook</string>
+    <string name="landing_app_slogan">Recipe Book App</string>
+    <string name="background_image">Background Image</string>
+    <string name="welcome_to_cookbook">Welcome to CookBook</string>
+    <string name="search_your_recipes">Search Your Recipes...</string>
+    <string name="cuisines">Cuisines</string>
+    <string name="meal_name">Meal Name</string>
+    <string name="category">Category</string>
+    <string name="difficulty_level">Difficulty Level</string>
+    <string name="total_cook_time">Total Cook Time</string>
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="ingredients">INGREDIENTS</string>
+    <string name="youtube">YOUTUBE</string>
+    <string name="source">SOURCE</string>
+    <string name="favorite">Favorite</string>
+    <string name="skip">Skip</string>
+    <string name="liked_recipes">Liked Recipes</string>
+    <string name="new_recipe">New Recipe</string>
+</resources>

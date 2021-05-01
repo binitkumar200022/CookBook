@@ -1,0 +1,169 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    tools:context=".HomeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/headerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/dark_yellow" />
+
+            <RelativeLayout
+                android:id="@+id/linear_layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/log_out_btn"
+                    android:layout_width="38sp"
+                    android:layout_height="38sp"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_log_out" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/darker_yellow"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/search_your_recipes"
+                    android:textColor="@color/white"
+                    app:drawableLeftCompat="@drawable/ic_search_primary_light"
+                    app:drawableStartCompat="@drawable/ic_search_primary_light" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerHeader"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/cardSearch"
+                android:layout_marginTop="10dp"
+                android:clipToPadding="false"
+                android:foregroundGravity="center"
+                android:overScrollMode="never" />
+
+            <include
+                android:id="@+id/shimmerMeal"
+                layout="@layout/item_view_pager_header_shimmer" />
+
+            <TextView
+                android:id="@+id/titleCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewPagerHeader"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/cuisines"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/titleCategory"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="50dp"
+                android:clipToPadding="false"
+                android:scrollbars="none" />
+
+            <include
+                android:id="@+id/shimmerCategory"
+                layout="@layout/item_recycler_category_shimmer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/add_new_recipe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/right_line"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/new_recipe"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_add"
+                    app:drawableStartCompat="@drawable/ic_add" />
+
+                <TextView
+                    android:id="@+id/liked_recipes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/right_line"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/liked_recipes"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:drawableLeftCompat="@drawable/ic_favorite_border"
+                    app:drawableStartCompat="@drawable/ic_favorite_border" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

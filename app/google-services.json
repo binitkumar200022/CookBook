@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1062349986241",
+    "project_id": "cookbook-binit",
+    "storage_bucket": "cookbook-binit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062349986241:android:05903f016b29200edfb740",
+        "android_client_info": {
+          "package_name": "com.example.cookbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062349986241-eo9tuthvpqmanjffhngkt297914qaaek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8x3kSZwsgOVNdT92vVcAWnhbPBfZzfl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062349986241-eo9tuthvpqmanjffhngkt297914qaaek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
